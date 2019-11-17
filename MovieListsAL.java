@@ -3,8 +3,8 @@ import java.util.ArrayList;
 /**
  * Write a description of class MovieListsAL here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Mr. Kim)
+ * @version (2019-11-16)
  */
 public class MovieListsAL
 {

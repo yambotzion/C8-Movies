@@ -1,10 +1,10 @@
-import java.util.ArrayList;
+import java.util.Arrays;
 
 /**
  * Write a description of class MovieListsAL here.
  *
- * @author (your name)
- * @version (a version number or a date)
+ * @author (Mr. Kim)
+ * @version (2019-11-16)
  */
 public class MovieListsAR
 {
@@ -14,10 +14,11 @@ public class MovieListsAR
     /**
      * Constructor for objects of class MovieListsAL
      */
-    public MovieListsAR()
+    public MovieListsAR(Movie[] movies)
     {
-
+        pool = movies.clone();
     }
 
 
+    
 }

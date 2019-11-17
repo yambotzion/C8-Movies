@@ -10,15 +10,24 @@ public class Movie
     // instance variables - replace the example below with your own
     private String name;
     private String studio;
-    private int    earnings;
+    private double rating;
     private int    year;
 
     /**
      * Constructor for objects of class Movie
      */
-    public Movie()
+    public Movie(String name, String studio, double rating, int year)
     {
-
-    }
+        this.name     = name;
+        this.studio   = studio;
+        this.rating   = rating;
+        this.year     = year;
+    } // Movie
+    
+    public String getName()     { return this.name;};
+    
+    public String getStudio()   { return this.studio;};
+    public double getRating()   { return this.rating;};
+    public int    getYear()     { return this.year; };
 
 }
