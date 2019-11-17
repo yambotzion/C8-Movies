@@ -26,17 +26,22 @@ public class MovieDriver
         Movie anastasia = new Movie("Anastasia", "Indy", 7.1, 1997);
         Movie spider    = new Movie("Spider-Man: Into the Spider-Verse", "Indy", 8.4, 2019);
         
-       Movie[] movies = {moana, frozen, bh6, spirit, howel, ponyo, marnie, april, kubo, 
+       Movie[] movieArray = {moana, frozen, bh6, spirit, howel, ponyo, marnie, april, kubo, 
            anastasia, spider};
         
+       
+       MovieListAL movieList = new MovieListAL(movieArray);
+       
+       ArrayList<Movie> highestRated = movieList.findHighestRatedByStudio();
+       for (int i=0 ; i<highestRated.size() ; i++)
+           System.out.println(highestRated.get(i));
+       
+       
+
         
     }
     
     
     
-    public static ArrayList<Integer> case1(ArrayList<Integer> a)
-    {
-        
-        return null;
-    }
+
 }

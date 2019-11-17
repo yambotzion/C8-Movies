@@ -29,5 +29,12 @@ public class Movie
     public String getStudio()   { return this.studio;};
     public double getRating()   { return this.rating;};
     public int    getYear()     { return this.year; };
+    
+    public String toString()
+    {
+        String s = " * Movie: "+this.name+"  Studio: :" +this.studio + " IMDB rating :"+this.rating;
+        return s;
+        
+    } // end toString();
 
 }
