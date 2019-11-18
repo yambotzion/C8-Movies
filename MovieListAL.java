@@ -20,6 +20,19 @@ public class MovieListAL
 
     }
 
+    public ArrayList<Movie> getPool()
+    {
+        return pool;
+    }
+    
+    /**
+     * Given an arraylist of Movies and a studio name, create a new ArrayList of movies
+     * by that studio
+     */
+    public ArrayList<Movie> getByStudio(String studio)
+    {
+        return null;
+    }
     
     
     /** 
@@ -27,25 +40,26 @@ public class MovieListAL
      */
     public Movie getHighestrating(ArrayList<Movie> movies)
     {
+
+        
         return null;
+        
     }
     
     
-    /**
-     * Given an arraylist of Movies and a studio name, create a new ArrayList of movies
-     * by that studio
-     */
-    public ArrayList<Movie> getByPublisher( ArrayList<Movie> movies, String studio)
-    {
-        return null;
-    }
+
     
     /**
      * Find the highest movies by studio
      */
     public ArrayList<Movie> findHighestRatedByStudio()
     {
+        ArrayList<Movie> highestRated = new ArrayList<Movie>();
+        
+        // Your code goes here
          return null;
+        // return highestRated;
+        
     }
 
 }

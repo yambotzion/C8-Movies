@@ -4,6 +4,7 @@
  *
  * @author (Mr. Kim)
  * @version (2019-11-16)
+ * 
  */
 public class Movie
 {
@@ -25,7 +26,6 @@ public class Movie
     } // Movie
     
     public String getName()     { return this.name;};
-    
     public String getStudio()   { return this.studio;};
     public double getRating()   { return this.rating;};
     public int    getYear()     { return this.year; };

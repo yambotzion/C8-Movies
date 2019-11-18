@@ -1,12 +1,12 @@
 #BlueJ package file
-dependency1.from=MovieListAL
+dependency1.from=MovieDriver
 dependency1.to=Movie
 dependency1.type=UsesDependency
 dependency2.from=MovieDriver
-dependency2.to=Movie
+dependency2.to=MovieListAL
 dependency2.type=UsesDependency
-dependency3.from=MovieDriver
-dependency3.to=MovieListAL
+dependency3.from=MovieListAL
+dependency3.to=Movie
 dependency3.type=UsesDependency
 editor.fx.0.height=739
 editor.fx.0.width=1076
