@@ -18,9 +18,8 @@ public class MovieListAL
     public MovieListAL(Movie[] movies)
     {
       pool = new ArrayList<Movie>();
-      for(int i = 0; i<movies.length; i++){
-       pool.add(movies[i]); 
-      }
+      for(Movie i : movies)
+       pool.add(i);
     }
     
     public ArrayList<Movie> getPool()
@@ -36,11 +35,11 @@ public class MovieListAL
     public ArrayList<Movie> getByStudio(String studio)
     {
         ArrayList<Movie> foundStudio = new ArrayList<Movie>();
-        for(int i = pool.size()-1; i>=0; i--){
-         if(pool.get(i).getStudio().equals(studio)){
-           foundStudio.add(pool.get(i));  
+        for(Movie i : pool)
+         if(i.getStudio().equals(studio)){
+           foundStudio.add(i);  
          }
-        } 
+        
         return foundStudio;
     }
     
@@ -51,9 +50,9 @@ public class MovieListAL
     public Movie getHighestRating(ArrayList<Movie> movies)
     {
       Movie highestRating = movies.get(0);
-      for(int i = 1; i<movies.size(); i++){
-       if(movies.get(i).getRating() > highestRating.getRating()){
-        highestRating = movies.get(i);
+      for(Movie i : movies){
+       if(i.getRating() > highestRating.getRating()){
+        highestRating = i;
         }
       }
       return highestRating;
